@@ -1,17 +1,12 @@
 package factorial;
 import java.util.Scanner;
 public class restanumeros {
-	public static int  recursividad(int numero ){
-		if (numero<=0) {
-			System.out.println(numero);
-			
-		return 1;
-		}else {
-			System.out.println(numero+" ");
-			recursividad(numero-1);
-			
+	public static void recursividad(int numero ){
+		if (numero<=10) {
+			System.out.print(numero+(" "));
+			recursivida(numero+1);
+	
 		}
-		return 1;
 		
 	}
 
@@ -60,8 +55,8 @@ public class restanumeros {
      
     while(!salir){
         System.out.println("===menu==="); 
-        System.out.println("1. numeros");
-        System.out.println("2. fibonacci");
+        System.out.println("1. numeros del 1-10");
+        System.out.println("2. serie fibonacci");
         System.out.println("3. factorial");
         System.out.println("4.palindromo");
         System.out.println("5. Salir");
@@ -72,9 +67,9 @@ public class restanumeros {
         switch(opcion){
         
             case 1:
-                System.out.println("recursivida");
+                //System.out.println("recursivida");
                 restanumeros recursividad=new restanumeros();
-                recursividad.recursividad(10);
+                recursividad.recursividad(1);
                
               
                 break;
@@ -84,7 +79,7 @@ public class restanumeros {
                 restanumeros recur=new restanumeros();
                 recur.fibonacci(numero);
                 for (int i = 0; i <=numero; i++) {
-					System.out.println(+fibonacci(i));
+					System.out.print(+fibonacci(i)+(" "));
                 
 				}
                 
